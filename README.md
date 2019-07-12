@@ -15,9 +15,30 @@ func totalWithTax() {
 
 }
 ```
+```
+let itemCost = 45.0
+let nyTax = 0.08775
 
+func totalWithTax(itemCost: Double, nyTax:Double ) {
+let costOfTax = itemCost * nyTax
+let total = costOfTax + itemCost
+print(total)
+}
+totalWithTax(itemCost: 45.0, nyTax: 0.08775)
+```
 Then, modify the function you implemented to have a return type of `Int`, and use an external name that looks more readable. Function calls should look something like "total cost of the item after tax"
 
+```
+let itemCost = 45.0
+let nyTax = 0.08775
+
+func totalWithTax(itemCost: Double, nyTax:Double) -> Int {
+let costOfTax = itemCost * nyTax
+let total = costOfTax + itemCost
+return Int(total)
+}
+totalWithTax(itemCost: 45.0, nyTax: 0.08775)
+```
 ## Question 2
 
 Convert the the following if/else statement below into function with a `String` return type.
@@ -33,7 +54,23 @@ if todaysTemperature <= 40 {
     print("Weather is moderate.")
 }
 ```
+```
+let todaysTemperature = 72
 
+func whatTheWeatherIsLikeToday() -> String {
+
+if todaysTemperature <= 40 {
+print("It's cold out.")
+} else if todaysTemperature >= 85 {
+print("It's really warm.")
+} else {
+print("Weather is moderate.")
+}
+return String(todaysTemperature)
+
+}
+whatTheWeatherIsLikeToday()
+```
 
 ## Question 3
 
