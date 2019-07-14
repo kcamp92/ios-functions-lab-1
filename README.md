@@ -83,7 +83,18 @@ Example:
 Input: `min2(a:1, b:2)`
 
 Output: `1`
+```
+func min2(a: Int, b: Int) -> Int {
+if a < b {
+return a
+}   else {
+return b
+}
+}
 
+min2(a: 4,b: 2)
+
+```
 
 ## Question 4
 
@@ -96,11 +107,23 @@ Example:
 Input: `lastDigit(12345)`
 
 Output: `5`
-
+```
+func lastDigit(_ number: Int) -> Int {
+return number % 10
+}
+lastDigit(45678)
+```
 
 ## Question 5
 
 Write a function that takes in any two positive integers and return the sum.
+```
+func letsStayPositive(a: Int, b: Int) -> Int {
+let sum = a + b
+return sum
+}
+letsStayPositive(a: 5, b: 7)
+```
 
 
 ## Question 6
